@@ -1,4 +1,11 @@
 <?php
+require 'src/Exception.php';
+require 'src/PHPMailer.php';
+require 'src/SMTP.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $company_name = strip_tags(trim($_POST["company_name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
@@ -10,21 +17,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    $recipient = "marco.rouhana@gmail.com";
-    $subject = "New contact from $company_name";
+    $mail = new PHPMailer(true);
 
-    $email_content = "Company Name: $company_name\n";
-    $email_content .= "Email: $email\n\n";
-    $email_content .= "Message:\n$message\n";
+    try {
+        //Server settings
+        $mail->isSMTP();                                            // Send using SMTP
+        $mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server to send through
+        $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+        $mail->Username   = 'marco.rouhana@gmail.com';                 // SMTP username
+        $mail->Password   = 'Cocomango200!';                  // SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+        $mail->Port       = 587;                                    // TCP port to connect to
 
-    $email_headers = "From: $company_name <$email>";
+        //Recipients
+        $mail->setFrom($email, $company_name);
+        $mail->addAddress('berberonical@gmail.com');                     // Add a recipient
 
-    if (mail($recipient, $subject, $email_content, $email_headers)) {
-        http_response_code(200);
-        echo "Thank You! Your message has been sent.";
-    } else {
-        http_response_code(500);
-        echo "Oops! Something went wrong, and we couldn't send your message.";
+        // Content
+        $mail->isHTML(false);                                       // Set email format to plain text
+        $mail->Subject = "New contact from $company_name";
+        $mail->Body    = "Company Name: $company_name\nEmail: $email\n\nMessage:\n$message";
+
+        $mail->send();
+        echo 'Thank You! Your message has been sent.';
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 
 } else {
