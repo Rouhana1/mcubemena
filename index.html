@@ -282,7 +282,7 @@
             <a href="#" class="social-link-wave w-inline-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/5f420aab94eec62a38c6940b/5f4307f4d16b653efcb71d51_Instagram%20Icon.svg" alt=""></a>
           </div>
         </div>
-        <div class="form-wrap-wave">
+        <!-- <div class="form-wrap-wave">
           <div class="form-block-2 w-form">
             <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-wave" data-wf-page-id="669588c5f56ce015d15878b8" data-wf-element-id="821a1405-dee2-9101-1280-fb87be17ccc3">
               <div class="field-wrap-wave"><label for="name" class="field-label-wave">Your Company Name</label>
@@ -301,7 +301,41 @@
               <div>Oops! Something went wrong while submitting the form.</div>
             </div>
           </div>
-        </div>
+        </div> -->
+        <div class="form-wrap-wave">
+        <div class="form-block-2 w-form">
+          <form id="email-form" name="email-form" data-name="Email Form" method="post" action="send_email.php" class="form-wave">
+              <div class="field-wrap-wave">
+                  <label for="company-name" class="field-label-wave">Your Company Name</label>
+                  <div class="input-icon-wrapper">
+                      <input class="text-field-wave w-input" maxlength="256" name="company_name" placeholder="Company Name" type="text" id="company-name" required>
+                      <img loading="lazy" src="https://uploads-ssl.webflow.com/5f420aab94eec62a38c6940b/5f42fa3efc77437fcf35e199_Icon%20Name.svg" alt="" class="input-icon">
+                  </div>
+              </div>
+              <div class="field-wrap-wave">
+                  <label for="email" class="field-label-wave">Mail</label>
+                  <div class="input-icon-wrapper">
+                      <input class="text-field-wave w-input" maxlength="256" name="email" placeholder="Your Email" type="email" id="email" required>
+                      <img loading="lazy" src="https://uploads-ssl.webflow.com/5f420aab94eec62a38c6940b/5f42fa3e21f4e3f05b480852_Icon%20Mail.svg" alt="" class="input-icon">
+                  </div>
+              </div>
+              <div class="field-wrap-wave">
+                  <label for="message" class="field-label-wave">Message</label>
+                  <textarea id="message" name="message" maxlength="5000" placeholder="Enter your message..." class="text-field-large-wave w-input" required></textarea>
+              </div>
+              <div class="button-wrap-right">
+                  <input type="submit" data-wait="Please wait..." class="button-wave w-button" value="Send Message">
+              </div>
+          </form>
+          <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+      </div>
+    </div>
+      
       </div>
     </div>
   </div>
