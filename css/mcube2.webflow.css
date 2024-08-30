@@ -3751,7 +3751,7 @@ blockquote {
   .nav-button-copy {
     min-width: 29%;
     min-height: 100%;
-    left: 98px;
+    top: 200px;
   }
 
   .service-bottom-copy {
