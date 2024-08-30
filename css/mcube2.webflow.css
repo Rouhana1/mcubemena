@@ -257,7 +257,7 @@ blockquote {
 }
 
 .overlay {
-  background-color: #0000004d;
+  background-color: #000000d9;
   background-image: linear-gradient(89deg, #0000003d, #fff0);
   position: absolute;
   inset: 0%;
@@ -845,7 +845,6 @@ blockquote {
   font-size: 9px;
   text-decoration: none;
   overflow: hidden;
-  top: 100px;
 }
 
 .social-circle {
@@ -894,35 +893,6 @@ blockquote {
   transition: background-color .5s cubic-bezier(.25, .46, .45, .94);
   display: flex;
   overflow: hidden;
-  
-}
-.outline-button-2 {
-  border: 1px solid var(--pinstripe);
-  color: #000;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  border-radius: 100px;
-  justify-content: center;
-  align-items: center;
-  min-height: 42px;
-  padding: 16px 32px;
-  font-size: 9px;
-  line-height: 1.35em;
-  text-decoration: none;
-  transition: background-color .5s cubic-bezier(.25, .46, .45, .94);
-  display: flex;
-  overflow: hidden;
-  top:-83px;
-  left: 100px;
-  
-}
-.outline-button-2.light {
-  color: #fff;
-  background-color: #00000054;
-  border-color: #ffffffa3;
-  flex-flow: row;
-  position: relative;
- 
 }
 
 .outline-button.light {
@@ -3422,8 +3392,8 @@ blockquote {
   font-size: 9px;
   text-decoration: none;
   position: relative;
-  top: 133px;
-  left: 120px;
+  top: -83px;
+  left: 96px;
   overflow: hidden;
 }
 
@@ -3564,17 +3534,22 @@ blockquote {
   .background.testimonial-background {
     z-index: -1;
     background-image: url('../images/iStock-1977175388.jpg');
-    background-position: 10% 0;
+    background-position: 5% 0;
     position: absolute;
   }
-/* hfeee */
+
   .background.about-background {
     background-image: url('../images/iStock-1039579378.jpg');
   }
 
   .overlay {
-    background-color: #000000aa;
+    background-color: #000000bd;
     background-image: linear-gradient(89deg, #0000005e, #fff0);
+  }
+
+  .overlay.dark {
+    background-color: #000000d9;
+    background-image: linear-gradient(89deg, #2e2e2e36, #fff0);
   }
 
   .body-display.small {
@@ -3752,7 +3727,7 @@ blockquote {
   .nav-button-copy {
     min-width: 29%;
     min-height: 100%;
-    top: 200px;
+    left: 98px;
   }
 
   .service-bottom-copy {
@@ -3866,7 +3841,7 @@ blockquote {
     background-color: #00000069;
     border: 1px solid #ffffff9c;
     min-height: 105%;
-    top: 100px;
+    top: -83px;
   }
 
   .text-block-4 {
@@ -4795,7 +4770,6 @@ blockquote {
 
   .nav-button {
     display: none;
-    
   }
 
   .hero-intro {
@@ -5096,9 +5070,9 @@ blockquote {
   }
 
   .nav-button-copy {
-    display: none;
-    top: 500px;
-    left: -26px;
+    display: flex;
+    top: -5px;
+    left: -6px;
   }
 
   .text-block-4 {
@@ -5123,7 +5097,6 @@ blockquote {
 
 #w-node-_819fb258-0938-7777-14ba-51413a9fd4d8-d15878b8, #w-node-_819fb258-0938-7777-14ba-51413a9fd4de-d15878b8, #w-node-_245c3d06-3f37-12ef-5f31-9f09c50d939a-d15878b8 {
   place-self: center;
-  
 }
 
 #w-node-b685f0ca-fc6d-eca3-b415-6b19359dbf58-d15878b8 {
