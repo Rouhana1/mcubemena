@@ -845,6 +845,7 @@ blockquote {
   font-size: 9px;
   text-decoration: none;
   overflow: hidden;
+  top: 100px;
 }
 
 .social-circle {
