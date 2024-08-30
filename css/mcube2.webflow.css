@@ -4795,6 +4795,7 @@ blockquote {
 
   .nav-button {
     display: none;
+    
   }
 
   .hero-intro {
@@ -5095,7 +5096,7 @@ blockquote {
   }
 
   .nav-button-copy {
-    display: flex;
+    display: none;
     top: 500px;
     left: -26px;
   }
