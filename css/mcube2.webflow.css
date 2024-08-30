@@ -5095,8 +5095,8 @@ blockquote {
 
   .nav-button-copy {
     display: flex;
-    top: -5px;
-    left: -6px;
+    top: 50px;
+    left: -26px;
   }
 
   .text-block-4 {
