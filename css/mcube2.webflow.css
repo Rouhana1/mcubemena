@@ -3320,7 +3320,7 @@ blockquote {
 }
 
 .image-4 {
-  margin-bottom: -63px;
+  margin-bottom: -48px;
   position: relative;
   top: 7px;
   bottom: 0;
@@ -3526,6 +3526,17 @@ blockquote {
   font-size: 9px;
 }
 
+.text-block-5 {
+  position: absolute;
+  top: 735px;
+  left: 285px;
+}
+
+.image-5 {
+  position: absolute;
+  top: 292px;
+}
+
 @media screen and (min-width: 1280px) {
   .background-wrapper {
     background-color: #0000;
@@ -3543,7 +3554,7 @@ blockquote {
   }
 
   .overlay {
-    background-color: #000000b8;
+    background-color: #000000bd;
     background-image: linear-gradient(89deg, #0000005e, #fff0);
   }
 
@@ -3724,6 +3735,12 @@ blockquote {
     left: 43%;
   }
 
+  .image-4 {
+    margin-bottom: -42px;
+    top: 2px;
+    left: 212px;
+  }
+
   .nav-button-copy {
     min-width: 29%;
     min-height: 100%;
@@ -3742,6 +3759,15 @@ blockquote {
 
   .subtitle-copy-copy {
     font-size: 15px;
+  }
+
+  .text-block-5 {
+    z-index: 2147483647;
+    color: #fff;
+    position: absolute;
+    top: 737.539px;
+    bottom: 0;
+    left: 589px;
   }
 }
 
@@ -3831,7 +3857,7 @@ blockquote {
 
   .image-4 {
     margin-top: -33px;
-    margin-bottom: -101px;
+    margin-bottom: -79px;
     top: -55px;
     left: 206px;
     box-shadow: 0 2px 5px -20px #0003;
@@ -3871,7 +3897,15 @@ blockquote {
 }
 
 @media screen and (min-width: 1920px) {
-  .body-display.small, .body-display-copy.small, .body-display-copy-copy.small {
+  .body-display.small {
+    font-size: 17px;
+  }
+
+  .image-4 {
+    margin-bottom: -75px;
+  }
+
+  .body-display-copy.small, .body-display-copy-copy.small {
     font-size: 17px;
   }
 }
@@ -4320,6 +4354,10 @@ blockquote {
 
   .footer-form-container {
     max-width: 350px;
+  }
+
+  .image-4 {
+    left: 207px;
   }
 
   .form-block-wave-2 {
@@ -5040,7 +5078,7 @@ blockquote {
 
   .image-4 {
     top: -85px;
-    left: 0;
+    left: -6px;
   }
 
   .details-wrap-wave-2 {
