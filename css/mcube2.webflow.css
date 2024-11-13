@@ -911,12 +911,12 @@ blockquote {
   left: 207px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   
   .outline-button.light._33rhu4hf {
     max-width: 200px;
     top: -25px;
-    left: 20px;
+    left: 35px;
   }
   
 }
