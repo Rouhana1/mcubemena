@@ -911,6 +911,16 @@ blockquote {
   left: 207px;
 }
 
+@media (max-width: 800px) {
+  
+  .outline-button.light._33rhu4hf {
+    max-width: 200px;
+    top: -25px;
+    left: 20px;
+  }
+  
+}
+
 .showreel-info {
   z-index: 10;
   grid-column-gap: 16px;
