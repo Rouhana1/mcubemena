@@ -204,11 +204,17 @@ blockquote {
 }
 
 .background.about-background {
-  background-image: url('../images/iStock-1039579378.jpg');
+  background-image: url('../images/datamena4.png');
+  /* width: 100%; */
+  opacity: 0.85;
+  
 }
+
+
 
 .background.services-hero-background {
   background-image: url('../images/016.jpeg');
+  
 }
 
 .background.journal-hero-background {
@@ -3571,10 +3577,11 @@ blockquote {
   color: #626d86;
   font-size: 17px;
   line-height: 1.6em;
+  
 }
 
 .body-display-2.small {
-  text-align: center;
+  text-align: left;
   margin-top: -41px;
   font-size: 15px;
   line-height: 1.6em;
@@ -3624,9 +3631,6 @@ blockquote {
     position: absolute;
   }
 
-  .background.about-background {
-    background-image: url('../images/iStock-1039579378.jpg');
-  }
 
   .overlay {
     background-color: #000000bd;
@@ -3961,7 +3965,7 @@ blockquote {
   .nav-button-copy {
     background-color: #00000069;
     border: 1px solid #ffffff9c;
-    min-height: 105%;
+    max-height: 100%;
     top: -83px;
   }
 
